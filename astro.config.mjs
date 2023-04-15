@@ -6,7 +6,7 @@ import node from "@astrojs/node";
 import yaml from '@rollup/plugin-yaml';
 import mdx from "@astrojs/mdx";
 import image from "@astrojs/image";
-
+import lottie from "astro-integration-lottie";
 import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
@@ -27,7 +27,8 @@ export default defineConfig({
   relativeLinks(),
   sitemap(), 
   react(), 
-  mdx(), ],
+  mdx(),
+  lottie(), ],
   adapter: node({
     mode: "standalone"
   })
