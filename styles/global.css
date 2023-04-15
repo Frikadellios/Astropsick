@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: "Titan One", cursive, "Inter", sans-serif, "Montserrat", sans-serif;
+    }
+  }
+
+@layer components {
+  .text-page {
+    color: var(--aw-color-text-page);
+  }
+  
+  .text-muted {
+    color: var(--aw-color-text-muted);
+  }
+  
+  .bg-light {
+    background-color: var(--aw-color-bg-page);
+  }
+  
+  .bg-dark {
+     @apply bg-night-700;
+  }
+}

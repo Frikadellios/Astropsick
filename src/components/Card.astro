@@ -8,6 +8,7 @@ export interface Props {
 const { href, title, body } = Astro.props;
 ---
 
+<div>
 <li class="link-card">
 	<a href={href}>
 		<h2>
@@ -19,6 +20,7 @@ const { href, title, body } = Astro.props;
 		</p>
 	</a>
 </li>
+</div>
 <style>
 	.link-card {
 		list-style: none;
