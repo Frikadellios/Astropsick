@@ -1,3 +1,4 @@
+/// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro-integration-lottie/env" />
 /// <reference types="@astrojs/image/client" />
 declare module "*.yml" {

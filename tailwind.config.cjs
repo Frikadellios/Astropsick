@@ -6,6 +6,37 @@ module.exports = {
 	darkMode:"class",
 	theme: {
 		extend: {
+			boxShadow: {
+				xs: "0px 1px 1px rgba(24, 24, 27, 0.06), 0px 0px 0px rgba(24, 24, 27, 0.08), 0px 0px 0px rgba(24, 24, 27, 0.08)",
+				sm: "0px 2px 1px rgba(24, 24, 27, 0.01), 0px 1px 1px rgba(24, 24, 27, 0.05), 0px 1px 1px rgba(24, 24, 27, 0.09), 0px 0px 0px rgba(24, 24, 27, 0.1), 0px 0px 0px rgba(24, 24, 27, 0.1);",
+				md: "0px 5px 2px rgba(24, 24, 27, 0.03), 0px 3px 2px rgba(24, 24, 27, 0.1), 0px 1px 1px rgba(24, 24, 27, 0.17), 0px 0px 1px rgba(24, 24, 27, 0.2), 0px 0px 0px rgba(24, 24, 27, 0.2);",
+				lg: "0px 25px 7px rgba(24, 24, 27, 0.01), 0px 16px 6px rgba(24, 24, 27, 0.04), 0px 9px 5px rgba(24, 24, 27, 0.15), 0px 4px 4px rgba(24, 24, 27, 0.26), 0px 1px 2px rgba(24, 24, 27, 0.29), 0px 0px 0px rgba(24, 24, 27, 0.3);",
+			},
+			animation: {
+				blob: 'blob 10s infinite',
+				border: 'background ease infinite',
+			},
+			keyframes: {
+				background: {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+				},
+				blob: {
+				  '0%, 100%': {
+					transform: 'translate(0, 0) scale(1)',
+				  },
+				  '25%': {
+					transform: 'translate(20px, -50px) scale(1.1)',
+				  },
+				  '50%': {
+					transform: 'translate(0, 20px) scale(1)',
+				  },
+				  '75%': {
+					transform: 'translate(-20px, -15px) scale(0.9)',
+				  },
+				},
+				
+			  },
 			fontFamily: {
 				cursive: ["Titan One", "cursive"],
 				sans: ["InterVariable", "sans-serif"],
@@ -13,7 +44,7 @@ module.exports = {
 			},
 			colors: {
 				transparent: 'transparent',
-				black: {
+				blacks: {
 					50: "#E6E6E6",
 					100: "#CCCCCC",
 					200: "#999999",
@@ -26,7 +57,7 @@ module.exports = {
 					900: "#000000",
 					950: "#000000"
 				  },
-				white: {
+				whites: {
 					50: "#FCFCFC",
 					100: "#FCFCFC",
 					200: "#FCFCFC",
@@ -39,7 +70,7 @@ module.exports = {
 					900: "#9C9C9C",
 					950: "#737373"
 				  },
-				blue: {
+				blues: {
 					50: "#DCDFFF",
 					100: "#B3B9FE",
 					200: "#6774FE",
@@ -52,7 +83,7 @@ module.exports = {
 					900: "#000219",
 					950: "#00010F"
 				  },
-				yellow: {
+				yellows: {
 					50: "#FFFDF0",
 					100: "#FFFBE0",
 					200: "#FFF7C2",
@@ -65,7 +96,7 @@ module.exports = {
 					900: "#998500",
 					950: "#706100"
 				  },
-				gray: {
+				grays: {
 					50: "#F0F0F0",
 					100: "#E0E0E0",
 					200: "#BFBFBF",
@@ -78,7 +109,7 @@ module.exports = {
 					900: "#0A0A0A",
 					950: "#050505"
 				  },
-				orange: {
+				oranges: {
 					50: "#FEF8F1",
 					100: "#FDEEDD",
 					200: "#FBDDBB",
@@ -91,7 +122,7 @@ module.exports = {
 					900: "#522E05",
 					950: "#2B1802"
 				  },
-				purple: {
+				purples: {
 					50: "#EEEBFA",
 					100: "#DAD2F4",
 					200: "#B9AAE9",
@@ -104,7 +135,7 @@ module.exports = {
 					900: "#100925",
 					950: "#070410"
 				  },
-				pink: {
+				pinks: {
 					50: "#FFEBFA",
 					100: "#FFD6F5",
 					200: "#FFB3ED",
@@ -117,7 +148,7 @@ module.exports = {
 					900: "#52003F",
 					950: "#29001F"
 				  },
-				azure: {
+				azures: {
 					50: "#F3FCFB",
 					100: "#E2F8F6",
 					200: "#C6F1EC",
@@ -130,7 +161,7 @@ module.exports = {
 					900: "#114540",
 					950: "#092522"
 				  },
-				dark: {
+				darks: {
 					50: "#EDEFF2",
 					100: "#DEE1E8",
 					200: "#BAC1CF",
@@ -143,7 +174,7 @@ module.exports = {
 					900: "#0F1115",
 					950: "#060709"
 				  },
-				green: {
+				greens: {
 					50: "#F2FFE5",
 					100: "#E5FFCC",
 					200: "#CDFF9E",
@@ -156,7 +187,7 @@ module.exports = {
 					900: "#1B3800",
 					950: "#0C1900"
 				  },
-				darkred: {
+				darkreds: {
 					50: "#FFE5E5",
 					100: "#FFCCCC",
 					200: "#FF9494",
@@ -169,7 +200,7 @@ module.exports = {
 					900: "#2E0000",
 					950: "#190000"
 				  },
-				sky: {
+				skys: {
 					50: "#F0FAFE",
 					100: "#E1F5FE",
 					200: "#C4ECFD",
@@ -195,7 +226,7 @@ module.exports = {
 					900: "#05080F",
 					950: "#030408"
 				  },
-				hover: {
+				hovers: {
 					50: "#FDFAFF",
 					100: "#FBF6FE",
 					200: "#F8ECFD",
@@ -208,7 +239,7 @@ module.exports = {
 					900: "#600E86",
 					950: "#320745"
 				  },
-				red: {
+				reds: {
 					50: "#FDF2F2",
 					100: "#F9E1E1",
 					200: "#F4C3C3",
@@ -245,8 +276,6 @@ module.exports = {
 			},
 		},
 	},
-	
-
 	corePlugins: {
 		aspectRatio: false,
 		container: false,
@@ -254,8 +283,9 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
 		require('@tailwindcss/typography'),
+		require('tailwindcss-animated'),
 		require('@tailwindcss/line-clamp'),
-
+		
 		// adds a `s-*` utility to apply the same width and height
 		plugin(function sizePlugin(api) {
 			api.matchUtilities(
@@ -295,31 +325,31 @@ module.exports = {
 					"@apply w-full mx-auto max-w-screen-2xl px-4 md:px-8": {},
 				},
 				".heading-1": {
-					"@apply font-cursive text-7xl leading-tight": {},
+					"@apply font-cursive text-7xl leading-tight text-blues-600 dark:text-yellows-600": {},
 				},
 
 				".heading-2": {
-					"@apply font-mono text-6xl leading-tight": {},
+					"@apply font-sans text-6xl font-bold text-blues-600 dark:text-yellows-600 leading-tight": {},
 				},
 
 				".heading-3": {
-					"@apply font-cursive text-4xl leading-tight": {},
+					"@apply font-sans font-bold text-4xl leading-tight text-blues-600 dark:text-yellows-600 leading-tight": {},
 					fontSize: "32px",
 				},
 
 				".heading-4": {
-					"@apply font-sans text-2xl leading-tight": {},
+					"@apply font-sans font-semibold tracking-widest text-blues-600 dark:text-yellows-600 uppercase text-2xl  leading-tight": {},
 				},
 
 				".heading-5": {
-					"@apply font-sans text-xl leading-tight": {},
+					"@apply font-sans font-bold text-xl text-blues-600 dark:text-yellows-600 leading-tight m-5 animate-fade-right animate-infinite animate-duration-[3500ms] animate-delay-[3500ms] animate-ease-in-out animate-alternate-reverse animate-fill-both": {},
 				},
 
 				".body": {
-					"@apply font-sans text-base font-light": {},
+					"@apply font-sans text-base  text-grays-700 dark:text-whites-500": {},
 				},
 				".body-large": {
-					"@apply font-sans text-2xl font-mono leading-normal": {},
+					"@apply text-2xl font-bold text-lg font-sans text-blues-600 hover:text-color dark:text-yellows-600 dark:hover:text-color leading-normal": {},
 				},
 
 				".code": {
@@ -327,14 +357,14 @@ module.exports = {
 				},
 
 				".link": {
-					"@apply transition-colors text-gray-300 hover:text-blue-500": {},
+					"@apply font-bold text-blues-600 hover:text-color dark:text-yellows-600 dark:hover:text-color"  : {},
 				},
 				".link-underline": {
 					"@apply link border-b border-gray-300 hover:border-blue-500": {},
 				},
 
 				".input": {
-					"@apply rounded-lg border border-gray-500 bg-gray-600 p-3 leading-none shadow-inner":
+					"@apply rounded-lg border border-grays-500 bg-grays-600 p-3 leading-none shadow-inner":
 						{},
 				},
 				".input-textarea": {
@@ -348,9 +378,9 @@ module.exports = {
 					// https://stackoverflow.com/a/32861765/1332403
 					backgroundSize: "20px 20px",
 					backgroundImage: `linear-gradient(to right, ${theme(
-						"colors.-gray.600",
+						"colors.-blues.600",
 					)} 1px, transparent 1px),\n    linear-gradient(to bottom, ${theme(
-						"colors.gray.600",
+						"colors.yellows.600",
 					)} 1px, transparent 1px)`,
 					backgroundPosition: "top center",
 					imageRendering: "pixelated",
