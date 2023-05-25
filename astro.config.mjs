@@ -11,7 +11,7 @@ import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://devopsick.com/',
+  site: 'https://demo.devopsick.com/',
   output: 'server',
   vite: {
     plugins: [yaml()]
