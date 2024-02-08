@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astropsick.vercel.app/sitemap-index.xml

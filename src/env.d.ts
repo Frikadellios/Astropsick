@@ -1,7 +1,4 @@
 /// <reference path="../.astro/types.d.ts" />
-/// <reference types="astro-integration-lottie/env" />
-/// <reference types="@astrojs/image/client" />
-declare module "*.yml" {
-    const value: any; // Add type definitions here if desired
-    export default value;
-  }
+/// <reference types="astro/client" />
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />

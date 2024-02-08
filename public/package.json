@@ -1,0 +1,72 @@
+{
+  "name": "shadbun",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "preinst": "npm install -g bun && yarn install && bun install --yarn",
+    "dev": "npx tinacms dev -c \"astro dev --port 8080\"",
+    "start": "astro dev",
+    "build": "tinacms build && astro build",
+    "preview": "astro preview",
+    "postbuild": "pagefind --site dist",
+    "format:check": "prettier --plugin-search-dir=. --check .",
+    "format": "prettier --plugin-search-dir=. --write .",
+    "lint": "eslint .",
+    "syncyarn": "bun bun.lockb",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/partytown": "^2.0.4",
+    "@astrojs/react": "^3.0.9",
+    "@astrojs/rss": "^4.0.4",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/ts-plugin": "^1.4.0",
+    "@pagefind/default-ui": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@tailwindcss/typography": "0.5.10",
+    "@types/react": "^18.2.54",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/parser": "^6.7.4",
+    "astro": "^4.3.2",
+    "astro-tina": "^0.1.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-astro": "0.31.4",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "lint-staged": "15.2.2",
+    "lucide-react": "^0.323.0",
+    "mdast-util-to-string": "^4.0.0",
+    "million": "^3.0.2",
+    "motion": "^10.16.4",
+    "pagefind": "^1.0.3",
+    "prettier": "^3.2.5",
+    "prettier-config-standard": "^7.0.0",
+    "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reading-time": "^1.5.0",
+    "sharp": "^0.33.2",
+    "slugify": "^1.6.6",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "tinacms": "^1.5.28",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.39",
+    "@types/bun": "^1.0.4",
+    "@types/node": "^20.11.16"
+  },
+  "lint-staged": {
+    "*.{astro,js,jsx,ts,tsx,md,mdx,json}": [
+      "prettier --write --plugin-search-dir=."
+    ]
+  }
+}
